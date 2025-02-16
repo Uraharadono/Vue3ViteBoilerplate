@@ -24,7 +24,7 @@
 // Error: Can't resolve '../webfonts/fa-regular-400.woff2' in 'C:\GitHub\Vue3WebpackBoilerplateV2\src\assets\styles'
 // issue is their pathing as I said above as it will look for "fa-regular-400.woff2" in "./assests" instead of node_modules folder
 // found issue here: https://stackoverflow.com/a/63804707/4267429
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 
 
 // ================================================================================

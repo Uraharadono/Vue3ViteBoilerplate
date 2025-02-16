@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import SephirothGridColumn from './SepirothGridColumn';
+import SephirothGridColumn from './SepirothGridColumn.vue';
 
 export default {
 	name: 'SephirothGridHeader',

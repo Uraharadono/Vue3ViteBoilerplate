@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url'
-import { visualizer } from 'rollup-plugin-visualizer'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import { fileURLToPath, URL } from 'node:url';
+import { visualizer } from 'rollup-plugin-visualizer';
+import sass from 'sass';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -53,7 +54,7 @@ export default defineConfig({
             debug: () => {}
           },
           // Additional sass options through implementation
-          implementation: require('sass'),
+          implementation: sass,
           sassOptions: {
             quietDeps: true,
             logger: {
@@ -76,4 +77,4 @@ export default defineConfig({
       'development': JSON.stringify('https://localhost:44335')
     }[process.env.NODE_ENV]
   }
-})
+});
